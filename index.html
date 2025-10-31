@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Home</title>
+
+  <!-- Custom font + stylesheet -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Your Name</a>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <!-- Optional: link your D3 page -->
+        <li><a href="templete.html">D3 Plots</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to My Website</h1>
+        <p>
+          Hello! I’m <strong>Your Name</strong>. This site is a small introduction to who I am, the things I’m learning,
+          and a few of the topics I’m excited about this semester. I’m currently exploring data visualization and web
+          development—especially how clean design and thoughtful storytelling can make data more understandable for
+          everyone. I enjoy building small projects that combine code and communication, like interactive charts, tiny
+          web apps, and simple dashboards that answer focused questions. Outside of school, I’m into photography,
+          running, and trying new coffee spots. I’m also working on improving my technical writing so I can explain
+          complex ideas clearly and concisely. On this site you’ll find a short overview of my interests, links to a
+          second page with more details, and a contact section where you can reach me. I’m grateful for feedback, project
+          ideas, or reading recommendations—especially around D3, design systems, and accessible interfaces. Thanks for
+          visiting, and I hope you find something useful or inspiring here!
+        </p>
+      </div>
+      <figure class="hero-media">
+        <!-- Replace images/profile.jpg with your own image file -->
+        <img src="images/profile.jpeg" alt="Portrait or an image representing your interests" />
+        <figcaption>One of my favorite photos from a weekend walk.</figcaption>
+      </figure>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>If you’d like to get in touch, here are a few ways to reach me:</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">linkedin.com/in/your-username</a></li>
+        <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // tiny enhancement: current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

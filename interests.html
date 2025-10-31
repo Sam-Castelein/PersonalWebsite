@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Interests</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Your Name</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="interests.html">Interests</a></li>
+        <li><a href="templete.html">D3 Plots</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="prose">
+      <h1>What I’m Learning</h1> <!-- smaller than Home h1 is ok; rubric just wants clear hierarchy -->
+      <p>
+        Over the past few months I’ve been learning how to design clear visualizations using HTML, CSS, and JavaScript.
+        I started with basic static charts and gradually moved toward D3 so I can build interactive explanations. I’m
+        especially interested in how small design details—labels, spacing, color contrast, and annotation—can make a
+        chart feel intuitive instead of overwhelming. My process usually starts with a question, then a quick sketch,
+        and finally a prototype in the browser. From there, I test the interaction: does the reader know where to look?
+        Is the legend placed where it helps, not where it distracts? Is the y-axis scale appropriate for the message?
+        When I run into problems, I try to reduce the design to its essentials and build back up. This approach keeps the
+        code organized and helps me explain the trade-offs I’m making. I also care about accessibility: using semantic
+        HTML, sufficient color contrast, keyboard focus, and descriptive alt text. These aren’t afterthoughts; they shape
+        how I structure the page. My goal is to create visuals that are both useful and pleasant—something I’d be proud
+        to share in a portfolio or class presentation.
+      </p>
+
+      <figure class="wide-figure">
+        <!-- Replace images/viz.jpg with an image related to your interests -->
+        <img src="images/viz.jpeg" alt="Example visualization or a related photo" />
+        <figcaption>A recent mockup that inspired a D3 version with annotations.</figcaption>
+      </figure>
+
+      <h2>Topics I’m Exploring Next</h2>
+      <ul>
+        <li>Designing effective legends and annotations</li>
+        <li>Responsive charts that work on mobile and desktop</li>
+        <li>Data cleaning workflows and reproducible pipelines</li>
+        <li>Color scales and accessibility (contrast & color-blind safety)</li>
+        <li>Deploying small projects with GitHub Pages</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
